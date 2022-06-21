@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Verification_Screen_01</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="we_need_to_register_your_phone_number_before_getting_started">We need to register your phone number before getting started!</string>
+    <string name="send_the_code">Send the Code</string>
+    <string name="verify_phone_number">Verify Phone Number</string>
+</resources>

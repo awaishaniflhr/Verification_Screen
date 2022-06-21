@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cracter_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/cracter" />
+s
+    <TextView
+        android:id="@+id/cracter_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cracter_img"
+        android:layout_marginTop="30dp"
+        android:text="@string/phone_verification"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cracter_title"
+        android:layout_marginTop="30dp"
+        android:text="@string/we_need_to_register_your_phone_number_before_getting_started"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_detail"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/corner_editext"
+        android:inputType="phone"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/phone_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_number"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_btn"
+        android:padding="10dp"
+        android:text="@string/verify_phone_number"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
