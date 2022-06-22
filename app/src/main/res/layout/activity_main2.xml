@@ -7,7 +7,10 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="100dp"
     tools:context=".MainActivity">
 
     <ImageView
@@ -36,32 +39,107 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cracter_title"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:text="@string/we_need_to_register_your_phone_number_before_getting_started"
         android:textAlignment="center"
         android:textColor="@color/gray"
         android:textSize="20sp"
         android:textStyle="normal" />
 
-
-    <EditText
-        android:id="@+id/phone_number"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/info_detail"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/corner_editext"
-        android:inputType="phone"
-        android:padding="15dp" />
+        android:id="@+id/otpEdittext"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/info_detail">
+        <EditText
+            android:id="@+id/edittextOne"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/gareen"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:inputType="numberDecimal"
+            android:padding="15dp"  />
+        <EditText
+            android:id="@+id/edittextTwo"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/gareen"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:inputType="numberDecimal"
+            android:padding="15dp"  />
+        <EditText
+            android:id="@+id/edittextThree"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/gareen"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:inputType="numberDecimal"
+            android:padding="15dp"  />
+        <EditText
+            android:id="@+id/edittextFour"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/gareen"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:inputType="numberDecimal"
+            android:padding="15dp"  />
+        <EditText
+            android:id="@+id/edittextFive"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/gareen"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:inputType="numberDecimal"
+            android:padding="15dp"  />
+        <EditText
+            android:id="@+id/edittextSix"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/gareen"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:inputType="numberDecimal"
+            android:padding="15dp"  />
 
-
+    </LinearLayout>
 
     <Button
         android:id="@+id/phone_submit_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/phone_number"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/otpEdittext"
+        android:layout_marginTop="30dp"
         android:background="@drawable/corner_btn"
         android:padding="10dp"
         android:text="@string/verify_phone_number"
@@ -72,7 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/phone_submit_btn"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:text="@string/edit_phone_number"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -84,7 +162,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/phone_submit_btn"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="0dp"
         android:layout_toEndOf="@+id/editNumber"
         android:text="@string/send_again"
